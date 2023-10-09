@@ -6,3 +6,14 @@
 //
 
 import Foundation
+
+struct Page: Identifiable {
+    let id: Int
+    let imageNmae: String
+}
+
+extension Page {
+    var thumbnailName: String {
+        return "thumb-" + imageNmae
+    }
+}
